@@ -1,0 +1,1117 @@
+/* ========================================
+   TOURIST ROUTE
+   ABOUT PAGE
+======================================== */
+
+
+/* ========================================
+   ОСНОВНЫЕ НАСТРОЙКИ
+======================================== */
+
+.about-hero,
+.about-content,
+.footer {
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+
+/* ========================================
+   HEADER
+======================================== */
+
+.header {
+    height: 102px;
+    background: rgba(255, 255, 255, 0.98);
+    border-bottom: 1px solid var(--border);
+}
+
+.header-container {
+    width: 90%;
+    max-width: 1390px;
+    height: 100%;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* TOURIST ROUTE */
+
+.header .logo {
+    display: flex;
+    align-items: center;
+}
+
+.header .logo-link {
+    display: inline-block;
+
+    color: var(--blue-dark) !important;
+
+    text-decoration: none !important;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 34px !important;
+
+    font-weight: 700;
+
+    line-height: 1.1;
+
+    padding: 10px 15px;
+
+    border-radius: 10px;
+
+    transition: all 0.25s ease;
+}
+
+.header .logo-link:hover {
+    color: white !important;
+
+    background: var(--blue);
+
+    transform: translateY(-2px);
+}
+
+
+/* НАВИГАЦИЯ */
+
+.header .navigation {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    height: 100%;
+}
+
+.header .navigation a {
+    display: inline-block;
+
+    padding: 12px 18px;
+
+    border-radius: 10px;
+
+    color: var(--blue-dark) !important;
+
+    background: transparent;
+
+    text-decoration: none !important;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    transition: all 0.25s ease;
+}
+
+.header .navigation a:hover {
+    background: var(--blue-light);
+
+    color: var(--blue) !important;
+
+    transform: translateY(-2px);
+}
+
+
+/* АКТИВНАЯ КНОПКА */
+
+.header .navigation a.active {
+    background: var(--blue);
+
+    color: white !important;
+
+    box-shadow:
+        0 5px 15px rgba(67, 143, 169, 0.20);
+}
+
+.header .navigation a.active:hover {
+    background: var(--blue-dark);
+
+    color: white !important;
+}
+
+
+/* УБИРАЕМ СТАРУЮ ЛИНИЮ ИЗ style.css */
+
+.header .navigation a.active::after {
+    display: none !important;
+}
+
+
+/* ========================================
+   HERO
+======================================== */
+
+.about-hero {
+    position: relative;
+
+    height: 390px;
+
+    overflow: hidden;
+
+    display: flex;
+
+    align-items: center;
+
+    background: #e8f4f8;
+}
+
+
+/* КАРТИНКА */
+
+.about-hero-image {
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    z-index: 0;
+}
+
+
+/* ЗАТЕМНЕНИЕ / СВЕТЛЫЙ ГРАДИЕНТ */
+
+.about-hero-overlay {
+    position: absolute;
+
+    inset: 0;
+
+    z-index: 1;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: flex-start;
+
+    padding-left: 8%;
+
+    padding-right: 40%;
+
+    background:
+        linear-gradient(90deg,
+            rgba(255, 255, 255, 0.96) 0%,
+            rgba(255, 255, 255, 0.85) 35%,
+            rgba(255, 255, 255, 0.25) 75%,
+            rgba(255, 255, 255, 0.02) 100%);
+}
+
+
+/* TOURIST ROUTE НА ФОТО */
+
+.hero-label {
+    color: var(--blue);
+
+    font-family: Arial, sans-serif;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 12px;
+}
+
+
+/* ЗАГОЛОВОК */
+
+.about-hero h1 {
+    color: var(--blue-dark);
+
+    font-size: 48px;
+
+    line-height: 1.15;
+
+    margin: 0 0 16px 0;
+
+    max-width: 650px;
+}
+
+
+/* ТЕКСТ */
+
+.about-hero p {
+    color: #526f80;
+
+    font-size: 19px;
+
+    line-height: 1.5;
+
+    max-width: 550px;
+
+    margin: 0;
+}
+
+
+/* ========================================
+   ОСНОВНОЙ КОНТЕНТ
+======================================== */
+
+.about-content {
+    width: 90%;
+
+    max-width: 1390px;
+
+    margin: 0 auto;
+
+    padding: 70px 0;
+}
+
+
+/* ========================================
+   ОБЩИЕ ЗАГОЛОВКИ
+======================================== */
+
+.section-heading {
+    margin-bottom: 35px;
+
+    text-align: center;
+}
+
+.section-label {
+    display: block;
+
+    color: var(--blue);
+
+    font-family: Arial, sans-serif;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 10px;
+}
+
+.section-heading h2 {
+    color: var(--blue-dark);
+
+    font-size: 36px;
+
+    line-height: 1.2;
+
+    margin: 0 0 15px 0;
+}
+
+.section-heading p {
+    color: var(--text-light);
+
+    font-family: Arial, sans-serif;
+
+    font-size: 15px;
+
+    line-height: 1.6;
+}
+
+
+/* ========================================
+   О ПРОЕКТЕ
+======================================== */
+
+.about-section {
+    display: grid;
+
+    grid-template-columns: 0.8fr 1.2fr;
+
+    gap: 70px;
+
+    align-items: start;
+
+    margin-bottom: 90px;
+}
+
+.about-section .section-heading {
+    text-align: left;
+
+    margin: 0;
+}
+
+.about-section .section-heading h2 {
+    font-size: 38px;
+}
+
+.about-text {
+    padding-top: 5px;
+}
+
+.about-text p {
+    color: var(--text-light);
+
+    font-family: Arial, sans-serif;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+
+    margin-bottom: 18px;
+}
+
+
+/* ========================================
+   НАША ЦЕЛЬ
+======================================== */
+
+.goal-section {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 55px;
+
+    align-items: center;
+
+    background: var(--blue-pale);
+
+    border: 1px solid var(--border);
+
+    border-radius: 20px;
+
+    padding: 28px;
+
+    margin-bottom: 95px;
+}
+
+.goal-image {
+    height: 380px;
+
+    overflow: hidden;
+
+    border-radius: 15px;
+}
+
+.goal-image img {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+.goal-text {
+    padding: 15px 20px;
+}
+
+.goal-text h2 {
+    color: var(--blue-dark);
+
+    font-size: 36px;
+
+    line-height: 1.2;
+
+    margin: 0 0 20px 0;
+}
+
+.goal-text p {
+    color: var(--text-light);
+
+    font-family: Arial, sans-serif;
+
+    font-size: 16px;
+
+    line-height: 1.75;
+
+    margin-bottom: 15px;
+}
+
+
+/* ========================================
+   ВОЗМОЖНОСТИ
+======================================== */
+
+.features-section {
+    margin-bottom: 100px;
+}
+
+.features-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 18px;
+}
+
+.feature-card {
+    background: white;
+
+    border: 1px solid var(--border);
+
+    border-radius: 15px;
+
+    padding: 28px 23px;
+
+    box-shadow:
+        0 5px 18px rgba(45, 82, 97, 0.06);
+
+    transition: all 0.25s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 10px 25px rgba(45, 82, 97, 0.12);
+}
+
+.feature-icon {
+    color: var(--blue);
+
+    font-size: 30px;
+
+    font-weight: 700;
+
+    margin-bottom: 17px;
+}
+
+.feature-card h3 {
+    color: var(--blue-dark);
+
+    font-size: 20px;
+
+    margin-bottom: 8px;
+}
+
+.feature-card p {
+    color: var(--text-light);
+
+    font-family: Arial, sans-serif;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+
+    margin: 0;
+}
+
+
+/* ========================================
+   ФОТО ДОРОГИ
+======================================== */
+
+.wide-photo-section {
+    position: relative;
+
+    height: 400px;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    margin-bottom: 100px;
+}
+
+.wide-photo-section>img {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+.wide-photo-section::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(90deg,
+            rgba(41, 79, 104, 0.75),
+            rgba(41, 79, 104, 0.15));
+
+    z-index: 1;
+}
+
+.wide-photo-caption {
+    position: absolute;
+
+    z-index: 2;
+
+    left: 50px;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    color: white;
+
+    max-width: 600px;
+}
+
+.wide-photo-caption span {
+    display: block;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 12px;
+}
+
+.wide-photo-caption h2 {
+    font-size: 40px;
+
+    line-height: 1.2;
+
+    margin: 0;
+}
+
+
+/* ========================================
+   МОРЕ
+======================================== */
+
+.sea-section {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 60px;
+
+    align-items: center;
+
+    margin-bottom: 100px;
+}
+
+.sea-text {
+    padding: 10px 20px 10px 0;
+}
+
+.sea-text h2 {
+    color: var(--blue-dark);
+
+    font-size: 38px;
+
+    line-height: 1.2;
+
+    margin: 0 0 20px 0;
+}
+
+.sea-text p {
+    color: var(--text-light);
+
+    font-family: Arial, sans-serif;
+
+    font-size: 16px;
+
+    line-height: 1.75;
+
+    margin-bottom: 15px;
+}
+
+.sea-image {
+    height: 400px;
+
+    overflow: hidden;
+
+    border-radius: 20px;
+
+    box-shadow: var(--shadow);
+}
+
+.sea-image img {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* ========================================
+   КОМАНДА
+======================================== */
+
+.team-section {
+    margin-bottom: 100px;
+}
+
+.team-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 18px;
+}
+
+.team-card {
+    background: white;
+
+    border: 1px solid var(--border);
+
+    border-radius: 17px;
+
+    padding: 28px 20px;
+
+    text-align: center;
+
+    box-shadow:
+        0 5px 18px rgba(45, 82, 97, 0.06);
+
+    transition: all 0.25s ease;
+}
+
+.team-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 10px 25px rgba(45, 82, 97, 0.11);
+}
+
+.team-photo {
+    width: 90px;
+
+    height: 90px;
+
+    margin: 0 auto 18px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: white;
+
+    background: var(--blue);
+
+    font-size: 32px;
+
+    font-weight: 700;
+
+    border: 5px solid var(--blue-light);
+}
+
+.team-card h3 {
+    color: var(--blue-dark);
+
+    font-size: 21px;
+
+    margin-bottom: 5px;
+}
+
+.team-card p {
+    color: var(--text-light);
+
+    font-family: Arial, sans-serif;
+
+    font-size: 13px;
+
+    margin-bottom: 12px;
+}
+
+.instagram-link {
+    color: var(--blue) !important;
+
+    text-decoration: none;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 14px;
+
+    font-weight: 600;
+}
+
+.instagram-link:hover {
+    text-decoration: underline;
+}
+
+
+/* ========================================
+   ФИНАЛЬНОЕ ФОТО
+======================================== */
+
+.final-photo-section {
+    position: relative;
+
+    height: 420px;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    margin-bottom: 20px;
+}
+
+.final-photo-section>img {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+.final-photo-section::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(90deg,
+            rgba(41, 79, 104, 0.82),
+            rgba(41, 79, 104, 0.20));
+
+    z-index: 1;
+}
+
+.final-photo-overlay {
+    position: absolute;
+
+    z-index: 2;
+
+    left: 55px;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    color: white;
+}
+
+.final-photo-overlay span {
+    display: block;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 12px;
+}
+
+.final-photo-overlay h2 {
+    font-size: 40px;
+
+    line-height: 1.2;
+
+    margin: 0 0 22px 0;
+}
+
+.route-button {
+    display: inline-block;
+
+    padding: 13px 22px;
+
+    background: white;
+
+    color: var(--blue-dark) !important;
+
+    text-decoration: none;
+
+    border-radius: 10px;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    transition: all 0.25s ease;
+}
+
+.route-button:hover {
+    background: var(--blue);
+
+    color: white !important;
+
+    transform: translateY(-2px);
+}
+
+
+/* ========================================
+   FOOTER
+======================================== */
+
+.footer {
+    background: #e8f3f6;
+
+    border-top: 1px solid var(--border);
+
+    padding: 30px 0;
+
+    color: var(--text-light);
+}
+
+.footer-content {
+    width: 90%;
+
+    max-width: 1390px;
+
+    margin: 0 auto;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 30px;
+}
+
+.footer strong {
+    color: var(--blue-dark);
+
+    font-size: 18px;
+}
+
+.footer p {
+    margin-top: 5px;
+
+    font-size: 14px;
+}
+
+
+/* ========================================
+   TABLET
+======================================== */
+
+@media (max-width: 900px) {
+
+    .header-container {
+        width: 94%;
+    }
+
+    .header .logo-link {
+        font-size: 28px !important;
+    }
+
+    .header .navigation {
+        gap: 5px;
+    }
+
+    .header .navigation a {
+        padding: 10px 13px;
+    }
+
+    .about-content {
+        width: 94%;
+    }
+
+    .about-section,
+    .goal-section,
+    .sea-section {
+        grid-template-columns: 1fr;
+    }
+
+    .about-section {
+        gap: 30px;
+    }
+
+    .about-section .section-heading {
+        text-align: center;
+    }
+
+    .goal-section {
+        gap: 30px;
+    }
+
+    .goal-text {
+        padding: 10px;
+    }
+
+    .sea-text {
+        padding: 0;
+    }
+
+    .features-grid,
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* ========================================
+   PHONE
+======================================== */
+
+@media (max-width: 650px) {
+
+    /* HEADER */
+
+    .header {
+        height: auto;
+
+        padding: 15px 0;
+    }
+
+    .header-container {
+        width: 94%;
+
+        flex-direction: column;
+
+        gap: 12px;
+    }
+
+    .header .logo-link {
+        font-size: 22px !important;
+
+        padding: 8px 12px;
+    }
+
+    .header .navigation {
+        width: 100%;
+
+        height: auto;
+
+        justify-content: center;
+
+        gap: 5px;
+    }
+
+    .header .navigation a {
+        padding: 8px 11px;
+
+        font-size: 13px;
+    }
+
+
+    /* HERO */
+
+    .about-hero {
+        height: 350px;
+    }
+
+    .about-hero-overlay {
+        padding-left: 6%;
+
+        padding-right: 6%;
+
+        background:
+            linear-gradient(90deg,
+                rgba(255, 255, 255, 0.94),
+                rgba(255, 255, 255, 0.65));
+    }
+
+    .about-hero h1 {
+        font-size: 34px;
+
+        max-width: 100%;
+    }
+
+    .about-hero p {
+        font-size: 16px;
+    }
+
+
+    /* CONTENT */
+
+    .about-content {
+        width: 94%;
+
+        padding: 45px 0;
+    }
+
+    .section-heading h2 {
+        font-size: 29px;
+    }
+
+    .about-section .section-heading h2,
+    .goal-text h2,
+    .sea-text h2 {
+        font-size: 29px;
+    }
+
+
+    /* GOAL */
+
+    .goal-section {
+        padding: 15px;
+    }
+
+    .goal-image {
+        height: 270px;
+    }
+
+
+    /* FEATURES */
+
+    .features-grid,
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* ROAD */
+
+    .wide-photo-section {
+        height: 330px;
+    }
+
+    .wide-photo-caption {
+        left: 25px;
+
+        right: 20px;
+    }
+
+    .wide-photo-caption h2 {
+        font-size: 29px;
+    }
+
+
+    /* SEA */
+
+    .sea-image {
+        height: 300px;
+    }
+
+
+    /* FINAL */
+
+    .final-photo-section {
+        height: 350px;
+    }
+
+    .final-photo-overlay {
+        left: 25px;
+
+        right: 20px;
+    }
+
+    .final-photo-overlay h2 {
+        font-size: 29px;
+    }
+
+
+    /* FOOTER */
+
+    .footer-content {
+        flex-direction: column;
+
+        text-align: center;
+    }
+}

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourist Route Planner</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header-container">
+
+            <div class="logo">
+                <div class="logo-icon">🌍</div>
+
+                <div>
+                    <h1>Tourist Route Planner</h1>
+                    <p>Планируй. Исследуй. Открывай мир.</p>
+                </div>
+            </div>
+
+            <nav class="navigation">
+                <a href="#" class="active">⌂ &nbsp; Главная</a>
+                <a href="routes.html">Маршруты</a>
+                <a href="about.html" class="about-button">О проекте</a>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <!-- БОЛЬШОЙ БАННЕР -->
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h2>Создай свой маршрут</h2>
+
+            <p>
+                Выбери страну, город и доступное время —
+                <br>
+                мы подберём для тебя лучший туристический маршрут!
+            </p>
+
+        </div>
+
+        <div class="hero-decoration">
+            Больше,<br>
+            чем просто<br>
+            путешествие ✈
+        </div>
+
+    </section>
+
+
+    <main class="main-container">
+
+        <!-- ПЛАНИРОВЩИК -->
+        <section class="planner-wrapper">
+
+            <div class="planner">
+
+                <h2>📍 Параметры маршрута</h2>
+
+
+                <div class="form-group">
+
+                    <label>🌐 &nbsp; Страна</label>
+
+                    <select id="country">
+                        <option value="">Выберите страну</option>
+                    </select>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>🏙 &nbsp; Город</label>
+
+                    <select id="city" disabled>
+                        <option value="">Сначала выберите страну</option>
+                    </select>
+
+                </div>
+
+
+                <div class="time-block">
+
+                    <div class="form-group">
+
+                        <label>◷ &nbsp; Доступное время</label>
+
+                        <input type="number" id="time" min="1" placeholder="Например: 5">
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>⌛ &nbsp; Единица времени</label>
+
+                        <select id="timeUnit">
+
+                            <option value="hours">Часы</option>
+                            <option value="minutes">Минуты</option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                <button id="buildRoute" class="button">
+                    ✈ &nbsp; Построить маршрут
+                </button>
+
+            </div>
+
+
+            <!-- ФОТО СПРАВА -->
+            <div class="planner-photo">
+
+                <div class="photo-text">
+                    <span>
+                        Путешествия<br>
+                        делают нас богаче<br>
+                        — в первую очередь<br>
+                        впечатлениями. ♡
+                    </span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- СООБЩЕНИЯ -->
+        <div id="message" class="message hidden"></div>
+
+
+        <!-- МАРШРУТ -->
+        <section id="routeSection" class="route-section hidden">
+            <div class="route-header">
+                <h2>🧭 Ваш маршрут</h2>
+                <p id="routeInfo"></p>
+            </div>
+
+            <div id="route"></div>
+        </section>
+
+    </main>
+
+
+    <footer id="about">
+
+        <div class="footer-container">
+
+            <span>🌐 &nbsp; Tourist Route Planner © 2026</span>
+
+            <span class="footer-slogan">
+                Открой новые горизонты ♡
+            </span>
+
+        </div>
+
+    </footer>
+
+
+    <script src="../script/script.js"></script>
+
+</body>
+
+</html>
